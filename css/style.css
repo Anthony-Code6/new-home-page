@@ -839,7 +839,6 @@
         height: 134px !important;
     }
 
-
     .card1 .descripcion .numero,
     .card2 .descripcion .numero,
     .card3 .descripcion .numero {
@@ -859,8 +858,6 @@
         margin-top: 10px !important;
         font-size: 1.02rem !important;
     }
-
-
 }
 
 @media screen and (width>1440px) and (width <=1656px) {
