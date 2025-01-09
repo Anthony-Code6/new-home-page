@@ -7,9 +7,11 @@
     <title>New Home Page</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <script src="./js/main.js" async></script>
 </head>
 
 <body>
+
     <div class="container-grid">
         <div class="item-element-grid column1">
             <nav>
@@ -27,11 +29,31 @@
                         </ul>
                     </div>
                     <div class="sidebar">
-                        <img src="./assets/images/icon-menu.svg" alt="Menu">
+                        <img src="./assets/images/icon-menu.svg" id="menu" alt="Menu">
                     </div>
                 </div>
             </nav>
         </div>
+
+        <div id="sidebar-menu">
+            <div id="sidebar-links">
+
+                <div id="icon-close">
+                    <img src="./assets/images/icon-menu-close.svg" id="close" alt="Menu">
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
         <div class="item-element-grid column2">
             <div class="content-element-grid foto">
                 <img src="./assets/images/image-web-3-desktop.jpg" class="desktop" alt="Foto">

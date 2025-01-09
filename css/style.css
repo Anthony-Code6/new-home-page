@@ -169,7 +169,60 @@
 
 }
 
-@media screen and (width > 400px) and (width <=666px) {
+@media screen and (width > 400px) and (width <=663px) {
+    .container-grid {
+        max-width: 100% !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        grid-template-areas: "column1"
+            "column2"
+            "column3"
+            "column4" !important;
+        padding: 10px !important;
+    }
+
+    .inside-element.description {
+        padding-top: 10px !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .inside-element.tops {
+        grid-template-columns: 1fr !important;
+    }
+
+    .texto button {
+        margin-top: 25px !important;
+        position: relative !important;
+        width: 55% !important;
+    }
+
+    /* Columna 1 */
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+    .sidebar {
+        display: inline-block !important;
+    }
+
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+    #links {
+        display: none !important;
+    }
+
+    #links ul {
+        gap: 20px !important;
+    }
+
+
+}
+
+@media screen and (width > 663px) and (width <=666px) {
 
     .container-grid {
         max-width: 100% !important;
@@ -184,7 +237,7 @@
 
     .inside-element.description {
         padding-top: 10px !important;
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr !important;
     }
 
     .inside-element.tops {
@@ -289,13 +342,85 @@
     .container-grid {
         max-width: 100% !important;
         grid-template-columns: 1fr !important;
-        grid-template-rows: 1fr !important;
+        grid-template-rows: 0.5fr !important;
         grid-template-areas: "column1"
             "column2"
             "column3"
             "column4" !important;
         padding: 10px !important;
     }
+
+    .inside-element.tops {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    /* Columna 1 */
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+
+
+    #links ul {
+        gap: 20px !important;
+    }
+
+    #links a {
+        font-size: 1rem !important;
+    }
+
+    /* Columna 2 */
+    .foto img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .foto {
+        height: auto !important;
+    }
+
+    .titulo h3 {
+        font-size: 3.7rem !important;
+        line-height: 3.7rem !important;
+    }
+
+    .texto p {
+        font-size: 1.03rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    .texto button {
+        width: 50% !important;
+        letter-spacing: 0.23rem !important;
+        text-transform: uppercase !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Columna 3 */
+    .column3 .descripcion {
+        gap: 1rem !important;
+        padding: 30px 20px 30px 20px !important;
+    }
+
+    .column3 h3 {
+        font-size: 2.2rem !important;
+    }
+
+    .column3 .subtitulo {
+        font-size: 1.2rem !important;
+    }
+
+    .column3 .texto {
+        font-size: 0.97rem !important;
+        line-height: 1.6rem !important;
+    }
+
 
 }
 
@@ -925,6 +1050,71 @@ body {
     display: none;
 }
 
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Color semi-transparente */
+    z-index: 1030; /* Por debajo del menú móvil */
+    display: none; /* Inicialmente oculto */
+}
+
+.column1,.column2,.column3,.column4{
+    z-index: 10;
+    position: relative;
+}
+
+/* Sidebar Menu */
+
+#sidebar-menu.show {
+    width: 60%;
+    opacity: 1;
+}
+
+#sidebar-menu {
+    padding: 30px 16px;
+    z-index: 1040;
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #ffff;
+    width: 0%;
+    height: 100vh;
+    opacity: 0;
+}
+
+#sidebar-menu #icon-close {
+    cursor: pointer;
+    text-align: end;
+    height: min-content;
+}
+
+#sidebar-menu #sidebar-links ul {
+    list-style: none;
+    margin:90px 0 0 0;
+    padding: 0;
+}
+
+#sidebar-menu #sidebar-links li {
+    margin-top: 20px;
+}
+
+#sidebar-menu #sidebar-links a {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+#sidebar-menu #sidebar-links a:hover {
+    color: var(--red)
+}
+
 /* Columna 2 */
 .foto img {
     width: 100%;
@@ -938,7 +1128,7 @@ body {
     display: none;
 }
 
-.titulo {}
+/* .titulo {} */
 
 .texto {
     position: relative;
