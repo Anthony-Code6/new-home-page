@@ -29,6 +29,7 @@
     font-weight: 800;
 }
 
+/* Mobile */
 @media screen and (width <=400px) {
     .container-grid {
         max-width: 100% !important;
@@ -38,7 +39,7 @@
             "column2"
             "column3"
             "column4" !important;
-        padding: 10px;
+        padding: 10px !important;
     }
 
     .inside-element.description {
@@ -51,7 +52,7 @@
     }
 
     /* Columna 1 */
-    
+
     #navbar {
         padding: 10px 0 10px 0 !important;
     }
@@ -168,22 +169,248 @@
 
 }
 
-@media screen and (width <=660px) {
+@media screen and (width > 400px) and (width <=666px) {
 
-    .inside-element.tops {
+    .container-grid {
+        max-width: 100% !important;
         grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        grid-template-areas: "column1"
+            "column2"
+            "column3"
+            "column4" !important;
+        padding: 10px !important;
     }
-}
 
-
-@media screen and (width >660px) and (width<=980px) {
-
-    .inside-element.tops {
+    .inside-element.description {
+        padding-top: 10px !important;
         grid-template-columns: 1fr 1fr !important;
     }
+
+    .inside-element.tops {
+        margin-top: 20px !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Columna 1 */
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+    .sidebar {
+        display: inline-block !important;
+    }
+
+
+    #navbar {
+        padding: 10px 0 10px 0 !important;
+    }
+
+    #links {
+        display: none !important;
+    }
+
+    #links ul {
+        gap: 20px !important;
+    }
+
+    /* Columna 2 */
+
+    .titulo h3 {
+        font-size: 4rem !important;
+        line-height: 3.7rem !important;
+    }
+
+    .texto p {
+        font-size: 1.02rem !important;
+        line-height: 1.4rem !important;
+    }
+
+    /* Columna 3 */
+    .column3 .descripcion {
+        gap: 1rem;
+        padding: 30px 20px 10px 20px;
+    }
+
+
+    .column3 h3 {
+        font-size: 2.7rem !important;
+    }
+
+    .column3 .subtitulo {
+        font-size: 1.44rem !important;
+    }
+
+    .column3 .texto {
+        font-size: 1.16rem !important;
+        line-height: 1.6rem !important;
+    }
+
+    .texto button {
+        width: 50% !important;
+        letter-spacing: 0.2rem !important;
+        padding: 13px !important;
+        font-size: 0.7rem !important;
+    }
+
+    /* Columna 4 */
+
+    .card1 img,
+    .card2 img,
+    .card3 img {
+        width: 110px !important;
+        height: 120px !important;
+    }
+
+
+    .card1 .descripcion .numero,
+    .card2 .descripcion .numero,
+    .card3 .descripcion .numero {
+        font-size: 2.7rem !important;
+    }
+
+    .card1 .descripcion .titulo,
+    .card2 .descripcion .titulo,
+    .card3 .descripcion .titulo {
+        margin-top: 6px !important;
+        font-size: 1.4rem !important;
+    }
+
+    .card1 .descripcion .contenido,
+    .card2 .descripcion .contenido,
+    .card3 .descripcion .contenido {
+        margin-top: 10px !important;
+        font-size: 1.2rem !important;
+    }
 }
 
-@media screen and (width>980px) and (width <=1440px) {
+@media screen and (width >666px) and (width<=900px) {
+    .container-grid {
+        max-width: 100% !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        grid-template-areas: "column1"
+            "column2"
+            "column3"
+            "column4" !important;
+        padding: 10px !important;
+    }
+
+}
+
+@media screen and (width >900px) and (width<=1040px) {
+    .container-grid {
+        max-width: 95% !important;
+        gap: 1.7rem !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: 0.1fr .4fr 0.61fr 0.2fr !important;
+    }
+
+    .inside-element.description {
+        padding-top: 10px !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .inside-element.tops {
+        margin-top: 20px !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    /* Columna 1 */
+    #navbar {
+        margin-top: 2rem !important;
+        padding: 0.7rem 0 !important;
+    }
+
+    #links ul {
+        gap: 2rem !important;
+    }
+
+    #links a {
+        font-size: 1rem !important;
+    }
+
+    /* Columna 2 */
+    .foto img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .foto{
+        height: auto !important;
+    }
+
+    .titulo h3 {
+        font-size: 4rem !important;
+        line-height: 3.7rem !important;
+    }
+
+    .texto p {
+        font-size: 1.03rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    .texto button {
+        width: 50% !important;
+        letter-spacing: 0.23rem !important;
+        text-transform: uppercase !important;
+        font-size: 0.8rem !important;
+    }
+
+     /* Columna 3 */
+     .column3 .descripcion {
+        gap: 1rem !important;
+        padding: 30px 20px 30px 20px !important;
+    }
+
+    .column3 h3 {
+        font-size: 2.4rem !important;
+    }
+
+    .column3 .subtitulo {
+        font-size: 1.23rem !important;
+    }
+
+    .column3 .texto {
+        font-size: 0.97rem !important;
+        line-height: 1.6rem !important;
+    }
+
+    /* Columna 4 */
+
+    .card1 img,
+    .card2 img,
+    .card3 img {
+        width: 110px !important;
+        height: 130px !important;
+    }
+
+
+    .card1 .descripcion .numero,
+    .card2 .descripcion .numero,
+    .card3 .descripcion .numero {
+        font-size: 2.2rem !important;
+    }
+
+    .card1 .descripcion .titulo,
+    .card2 .descripcion .titulo,
+    .card3 .descripcion .titulo {
+        margin-top: 6px !important;
+        font-size: 1rem !important;
+    }
+
+    .card1 .descripcion .contenido,
+    .card2 .descripcion .contenido,
+    .card3 .descripcion .contenido {
+        margin-top: 10px !important;
+        font-size: 0.9rem !important;
+        line-height: 1.4rem !important;
+    }
+
+}
+
+@media screen and (width>1040px) and (width <=1440px) {
 
     .container-grid {
         max-width: 80% !important;
@@ -203,7 +430,11 @@
     }
 
     #links ul {
-        gap: 3.3rem !important;
+        gap: 3rem !important;
+    }
+
+    #links a {
+        font-size: 1rem !important;
     }
 
     /* Columna 2 */
@@ -299,7 +530,7 @@ body {
         "column2 column2 column3"
         "column2 column2 column3"
         "column4 column4 column4";
-    gap: 1rem
+    gap: 1.6rem;
 }
 
 .container-grid>*,
@@ -352,10 +583,11 @@ body {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 2.4rem;
+    gap: 3.2rem;
 }
 
 #links a {
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--dark-grayish-blue);
 }
